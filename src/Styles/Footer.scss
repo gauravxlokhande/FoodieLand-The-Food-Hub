@@ -1,0 +1,158 @@
+.footer-main {
+  width: 100%;
+  height: 100%;
+  margin: 40px 0px 30px 0px;
+
+  .containe {
+    padding: 0px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    hr {
+      border-top: 2px solid black;
+      width: 100%;
+    }
+
+    .imp-p {
+      p {
+        margin-top: 5px;
+        font-size: 15px;
+        font-weight: 300;
+      }
+    }
+
+    .menu {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+
+      h1 {
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+
+    h1 {
+      font-size: 12px;
+      font-weight: 500;
+    }
+
+    .iconss {
+      margin-top: 20px;
+      gap: 20px;
+      display: flex;
+      flex-direction: row;
+      img {
+        width: 17px;
+        height: 15px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .footer-main {
+      margin: none;
+      padding: none;
+      .containe {
+        padding: 0px 30px;
+        .menu {
+          gap: 20px;
+          h1 {
+            font-size: 13px;
+          }
+        }
+      }
+
+      .footer {
+        h1 {
+          font-size: 11px;
+        }
+        .iconss {
+          gap: 15px;
+          img {
+            width: 16px;
+            height: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .footer-main {
+      margin: none;
+      padding: none;
+      .containe {
+        padding: 0px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        .menu {
+          gap: 15px;
+          h1 {
+            font-size: 12px;
+          }
+        }
+      }
+
+      .footer {
+        h1 {
+          font-size: 10px;
+        }
+        .iconss {
+          gap: 10px;
+          img {
+            width: 15px;
+            height: 13px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .footer-main {
+      margin: none;
+      padding: none;
+      .containe {
+        padding: 0px 10px;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .menu {
+          gap: 10px;
+          flex-direction: column;
+          align-items: flex-start;
+
+          h1 {
+            font-size: 11px;
+          }
+        }
+      }
+
+      .footer {
+        h1 {
+          font-size: 9px;
+        }
+        .iconss {
+          gap: 5px;
+          img {
+            width: 14px;
+            height: 12px;
+          }
+        }
+      }
+    }
+  }
+}

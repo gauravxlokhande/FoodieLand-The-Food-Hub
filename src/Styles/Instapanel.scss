@@ -1,0 +1,148 @@
+.main-insta {
+  width: 100%;
+  height: auto;
+  padding: 50px 50px 0px 50px;
+
+  .header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 60px;
+
+    h1 {
+      font-size: 30px;
+      font-weight: 600;
+    }
+    p {
+      font-size: 15px;
+      width: 60%;
+    }
+  }
+
+  .photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    img {
+      width: 220px;
+      height: 320px;
+      margin: 10px; // Add margin to avoid overlap
+    }
+  }
+
+  .btnn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    button {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      margin-top: 25px;
+      background-color: black;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 10px;
+      font-size: 12px;
+
+      img {
+        width: 17px;
+        height: 17px;
+      }
+    }
+  }
+
+  // Medium devices (tablets, 768px and up)
+  @media (max-width: 992px) {
+    padding: 40px 30px 0px 30px;
+
+    .header {
+      padding-bottom: 50px;
+
+      h1 {
+        font-size: 28px;
+      }
+      p {
+        font-size: 14px;
+        width: 70%;
+      }
+    }
+
+    .photos {
+      img {
+        width: 180px;
+        height: 260px;
+      }
+    }
+
+    .btnn button {
+      padding: 10px 18px;
+      font-size: 11px;
+    }
+  }
+
+  // Small devices (landscape phones, 576px and up)
+  @media (max-width: 768px) {
+    padding: 30px 20px 0px 20px;
+
+    .header {
+      padding-bottom: 40px;
+
+      h1 {
+        font-size: 24px;
+      }
+      p {
+        font-size: 12px;
+        width: 80%;
+      }
+    }
+
+    .photos {
+      img {
+        width: 160px;
+        height: 240px;
+      }
+    }
+
+    .btnn button {
+      padding: 8px 16px;
+      font-size: 10px;
+    }
+  }
+
+  // Extra small devices (portrait phones, less than 576px)
+  @media (max-width: 576px) {
+    padding: 20px 15px 0px 15px;
+
+    .header {
+      padding-bottom: 30px;
+
+      h1 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 10px;
+        width: 90%;
+      }
+    }
+
+    .photos {
+      flex-direction: column;
+      align-items: center;
+
+      img {
+        width: 140px;
+        height: 200px;
+      }
+    }
+
+    .btnn button {
+      padding: 6px 14px;
+      font-size: 9px;
+    }
+  }
+}

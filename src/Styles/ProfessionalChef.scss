@@ -1,0 +1,50 @@
+.main-ProfessionslChef {
+  padding: 10px 50px 0px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  h1 {
+    font-size: 45px;
+    font-weight: bold;
+  }
+  .img-date {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 16px;
+    .img-name {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      img {
+        width: 35px;
+        height: 35px;
+      }
+      h2 {
+        font-size: 10px;
+        font-weight: bold;
+      }
+      border-right: 1px solid gray;
+      padding-right: 25px;
+    }
+    .date {
+      font-size: 10px;
+      font-weight: bold;
+      color: gray;
+    }
+  }
+  p {
+    width: 80%;
+    padding: 26px;
+    display: flex;
+    text-align: center;
+    font-size: 14px;
+    font-family: "Times New Roman", Times, serif;
+    color: gray;
+  }
+  img {
+    border-radius: 20px;
+    width: 100%;
+  }
+}

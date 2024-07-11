@@ -1,0 +1,251 @@
+.main-hero {
+  width: 100%;
+  height: 100%;
+  padding: 20px 50px 0px 50px;
+
+  .hero-container {
+    height: 85vh;
+    border-radius: 15px;
+    background-color: #e7fafe;
+    display: flex;
+    justify-content: space-between;
+
+    .recipie-container {
+      width: 50%;
+      padding: 33px;
+
+      .hot-recipes {
+        button {
+          padding: 10px 15px;
+          background-color: white;
+          border-radius: 40px;
+          display: inline-flex;
+          gap: 9px;
+          font-weight: bold;
+        }
+      }
+
+      .title {
+        h1 {
+          font-weight: bold;
+          font-size: 3rem;
+        }
+      }
+
+      .description {
+        p {
+          font-size: 1rem;
+        }
+      }
+
+      .timing {
+        display: flex;
+        gap: 16px;
+        margin-top: 17px;
+        button {
+          padding: 7px 15px;
+          background-color: transparent;
+          border-radius: 40px;
+          display: inline-flex;
+          gap: 9px;
+          font-weight: bold;
+          border: black 1px solid;
+        }
+      }
+
+      .view-recipes {
+        display: flex;
+        justify-content: space-between;
+
+        margin: 67px 20px 0px 0px;
+        .photo {
+          display: flex;
+          img {
+            width: 30px;
+            height: 30px;
+          }
+          .name {
+            h1 {
+              margin-left: 5px;
+              font-size: 10px;
+            }
+          }
+        }
+
+        .playbtn {
+          margin-left: 30px;
+          button {
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+            border-radius: 10px;
+            display: inline-flex;
+            gap: 9px;
+            font-weight: bold;
+            color: white;
+          }
+        }
+      }
+    }
+    .ChickenWingsimg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .main-hero {
+    padding: none;
+    .hero-container {
+      height: 60%;
+      .recipie-container {
+        padding: 19px;
+        .hot-recipes {
+          button {
+            padding: 5px 5px;
+            font-weight: bold;
+            font-size: 10px;
+            img {
+              width: 16px;
+              height: 16px;
+            }
+          }
+        }
+
+        .title {
+          h1 {
+            font-size: 36px;
+            line-height: 40px;
+          }
+        }
+
+        .description {
+          p {
+            margin-top: 10px;
+            display: flex;
+          }
+        }
+
+        .timing {
+          button {
+            margin-top: 10px;
+            img {
+              width: 20px;
+              height: 20px;
+            }
+            align-items: center;
+            padding: 4px 6px;
+            font-size: 10px;
+          }
+        }
+
+        .view-recipes {
+          margin: 100px 20px 0px 0px;
+          .photo {
+            display: flex;
+            img {
+              width: 27px;
+              height: 27px;
+            }
+            .name {
+              h1 {
+                font-size: 8px;
+              }
+            }
+          }
+
+          .playbtn {
+            button {
+              padding: 2px;
+              font-size: 12px;
+              gap: 3px;
+              padding-right: 6px;
+            }
+          }
+        }
+      }
+      .ChickenWingsimg {
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .main-hero {
+    padding: 16px 5px 0px 5px;
+
+    .hero-container {
+      height: 32vh;
+
+      .recipie-container {
+        width: 50%;
+        padding: 4px;
+
+        .hot-recipes {
+          button {
+            padding: 4px 4px;
+          }
+        }
+
+        .title {
+          h1 {
+            font-size: 20px;
+            line-height: 24px;
+          }
+        }
+
+        .description {
+          p {
+            display: none;
+          }
+        }
+
+        .timing {
+          display: flex;
+          gap: 16px;
+          margin-top: 5px;
+          button {
+            font-size: 7px;
+            img {
+              width: 15px;
+              height: 15px;
+            }
+            gap: 5px;
+          }
+        }
+
+        .view-recipes {
+          margin: 30px 20px 0px 0px;
+          .photo {
+            display: flex;
+            img {
+              width: 20px;
+              height: 20px;
+            }
+            .name {
+              h1 {
+                margin-left: 3px;
+                font-size: 7px;
+              }
+            }
+          }
+
+          .playbtn {
+            margin-left: 15px;
+            button {
+              padding: 3px;
+              font-size: 7px;
+            }
+          }
+        }
+      }
+      .ChickenWingsimg {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

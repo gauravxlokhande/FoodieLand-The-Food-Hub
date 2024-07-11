@@ -1,0 +1,159 @@
+.main-Contact {
+  padding: 30px 50px 0px 50px;
+  width: 100%;
+
+  .Contsctus {
+    display: flex;
+    justify-content: center;
+
+    h1 {
+      font-size: 40px;
+      font-weight: bold;
+    }
+  }
+
+  .pic-inputs {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+
+    .chef-Img {
+      img {
+        width: 100%;
+        height: 430px;
+      }
+    }
+
+    .all-inputes {
+      flex: 1;
+
+      .inp-flex {
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+
+        .inpt-one,
+        .inpt-two {
+          flex: 1;
+
+          h1 {
+            padding: 7px;
+            color: gray;
+          }
+
+          input {
+            width: 100%;
+            height: 55px;
+            border: 1px solid rgb(154, 140, 140);
+            padding: 20px;
+            border-radius: 10px;
+          }
+        }
+      }
+
+      .description {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+
+        h1 {
+          padding: 7px;
+          color: gray;
+        }
+
+        input {
+          border: 1px solid rgb(154, 140, 140);
+          padding: 15px 10px 150px 20px;
+          border-radius: 10px;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    button {
+      padding: 14px 34px;
+      background-color: black;
+      color: white;
+      font-weight: bold;
+      font-size: 17px;
+      border-radius: 10px;
+      margin-right: 235px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    padding: 30px 30px 0px 30px;
+
+    .Contsctus h1 {
+      font-size: 35px;
+    }
+
+    .pic-inputs {
+      flex-direction: column;
+
+      .chef-Img img {
+        height: auto;
+      }
+
+      .inp-flex {
+        flex-direction: column;
+      }
+    }
+
+    .btn button {
+      margin-right: 0;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 30px 20px 0px 20px;
+
+    .Contsctus h1 {
+      font-size: 30px;
+    }
+
+    .pic-inputs {
+      gap: 20px;
+
+      .inp-flex {
+        gap: 15px;
+      }
+
+      .description input {
+        padding: 15px 10px 100px 20px;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 30px 10px 0px 10px;
+
+    .Contsctus h1 {
+      font-size: 25px;
+    }
+
+    .pic-inputs {
+      gap: 10px;
+
+      .inp-flex {
+        gap: 10px;
+      }
+
+      .description input {
+        padding: 15px 10px 80px 20px;
+      }
+    }
+
+    .btn button {
+      padding: 12px 30px;
+      font-size: 15px;
+      margin-right: 0;
+    }
+  }
+}

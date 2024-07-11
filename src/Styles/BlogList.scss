@@ -1,0 +1,157 @@
+.main-BlogList {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 60px 10px 60px;
+
+  .bloglistAll {
+    width: 100%;
+
+    .card {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+      margin-top: 20px;
+      width: 100%;
+      img {
+        border-radius: 20px;
+        width: 250px;
+        height: 170px;
+      }
+      .desc-card {
+        flex: 1;
+        padding: 10px;
+        h1 {
+          font-size: 17px;
+          font-weight: bold;
+          font-family: "Segoe UI";
+        }
+        p {
+          margin-top: 9px;
+          padding: 5px 0px 5px 0px;
+          font-size: 12px;
+          color: gray;
+        }
+        .img-date {
+          display: flex;
+          gap: 25px;
+          margin-top: 40px;
+          align-items: center;
+          .img-name {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            img {
+              width: 30px;
+              height: 30px;
+            }
+            h1 {
+              font-size: 9px;
+            }
+          }
+          .datee {
+            h1 {
+              font-size: 9px;
+              color: gray;
+            }
+          }
+        }
+      }
+    }
+
+    .Testyrecipie {
+      width: 100%;
+      margin-top: 20px;
+
+      h1 {
+        font-size: 17px;
+        font-weight: bold;
+      }
+      .card {
+        display: flex;
+        gap: 10px;
+        width: 100%;
+        img {
+          width: 150px;
+          height: 100px;
+        }
+        .desc-card {
+          flex: 1;
+          padding: 0;
+          margin: 0;
+          h1 {
+            font-size: 17px;
+          }
+          p {
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .main-BlogList {
+    padding: 10px 30px 10px 30px;
+  }
+
+  .bloglistAll .card {
+    flex-direction: column;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .bloglistAll .Testyrecipie .card {
+    flex-direction: column;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .main-BlogList {
+    padding: 10px 15px 10px 15px;
+  }
+
+  .bloglistAll .card,
+  .bloglistAll .Testyrecipie .card {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .bloglistAll .card .desc-card h1,
+  .bloglistAll .Testyrecipie .card .desc-card h1 {
+    font-size: 15px;
+  }
+
+  .bloglistAll .card .desc-card p,
+  .bloglistAll .Testyrecipie .card .desc-card p {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-BlogList {
+    padding: 10px 5px 10px 5px;
+  }
+
+  .bloglistAll .card,
+  .bloglistAll .Testyrecipie .card {
+    gap: 10px;
+  }
+
+  .bloglistAll .card .desc-card h1,
+  .bloglistAll .Testyrecipie .card .desc-card h1 {
+    font-size: 14px;
+  }
+
+  .bloglistAll .card .desc-card p,
+  .bloglistAll .Testyrecipie .card .desc-card p {
+    font-size: 8px;
+  }
+}

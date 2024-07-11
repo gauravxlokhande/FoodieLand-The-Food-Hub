@@ -1,0 +1,131 @@
+.main-RecipeDescription {
+  padding: 50px 120px 0px 120px;
+  display: flex;
+  flex-wrap: wrap;
+
+  .all-data {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    .ThoughtCard {
+      p {
+        font-size: 30px;
+        font-style: italic;
+        width: 100%;
+        max-width: 600px;
+        padding: 20px;
+        background: linear-gradient(white, #b8bac9);
+        border-radius: 20px;
+      }
+    }
+
+    .heading-description {
+      img {
+        border-radius: 20px;
+        padding: 10px 0px 10px 0px;
+        max-width: 100%;
+      }
+      width: 100%;
+      padding: 20px;
+      h1 {
+        font-weight: bold;
+        font-size: 16px;
+      }
+      p {
+        font-size: 14px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+    }
+  }
+
+  .icons {
+    width: 100%;
+    max-width: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 26px;
+    font-family: "Times New Roman", Times, serif;
+    h1 {
+      font-size: 13px;
+      font-weight: bold;
+    }
+    img {
+      width: 15px;
+      height: 15px;
+    }
+  }
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .main-RecipeDescription {
+    padding: 40px 60px 0px 60px;
+  }
+
+  .all-data .ThoughtCard p {
+    font-size: 25px;
+  }
+
+  .icons {
+    max-width: 150px;
+    h1 {
+      font-size: 12px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .main-RecipeDescription {
+    padding: 20px 20px 0px 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .all-data .ThoughtCard p {
+    font-size: 20px;
+    padding: 15px;
+  }
+
+  .all-data .heading-description h1 {
+    font-size: 14px;
+  }
+
+  .all-data .heading-description p {
+    font-size: 12px;
+  }
+
+  .icons {
+    max-width: 120px;
+    h1 {
+      font-size: 11px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .main-RecipeDescription {
+    padding: 10px 10px 0px 10px;
+  }
+
+  .all-data .ThoughtCard p {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .all-data .heading-description h1 {
+    font-size: 12px;
+  }
+
+  .all-data .heading-description p {
+    font-size: 10px;
+  }
+
+  .icons {
+    max-width: 100px;
+    h1 {
+      font-size: 10px;
+    }
+  }
+}
