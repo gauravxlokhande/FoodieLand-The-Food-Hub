@@ -5,9 +5,6 @@
 ### Introduction
 FoodieLand is a dynamic website designed for self-made chefs. It showcases a wide range of food categories and recipes, complete with cooking times, types, and detailed nutritional information. Users can explore blogs sharing recipes, insights, and experiences, as well as contact experts for any culinary assistance.
 
-![image](https://github.com/user-attachments/assets/03a2d80b-3bfc-4399-b8e2-7dd886ebdf65)
-
-### See the full Demo:
 https://github.com/user-attachments/assets/c9e94dc0-e6b0-4ed5-a9bc-865cee561388
 
 
