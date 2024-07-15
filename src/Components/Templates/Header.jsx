@@ -54,7 +54,7 @@ function Header() {
                 <div className='navigationtwo'>
                     <ul>
                         {HeaderNavigation.map((item, index) => (
-                            <li key={index} onClick={onclickofitem}    >  <Link to={`/${item}`}>{item}</Link></li>
+                            <li key={index} onClick={onclickofitem}>  <Link to={`/${item}`}>{item}</Link></li>
                         ))}
                     </ul>
                 </div>
